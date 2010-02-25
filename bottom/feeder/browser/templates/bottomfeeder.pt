@@ -1,0 +1,57 @@
+<div id="footpanel"
+     tal:define="member view/member;
+                 portal_url view/portal_url">
+    <ul id="mainpanel">
+        <li>
+            <a href="#" 
+               class="home"
+               tal:attributes="href string:${view/portal_url}">
+                <small>Home</small>
+            </a>
+        </li>
+        <li>
+            <a href="#" 
+               class="profile"
+               tal:attributes="href string:${view/portal_url}/author/${member/getId}">
+                View Profile
+                <small>View Profile</small>
+            </a>
+        </li>
+        <li>
+            <a href="#" 
+               class="editprofile"
+               tal:attributes="href string:${view/portal_url}/personalize_form">
+                Edit Profile
+                <small>Edit Profile</small>
+            </a>
+        </li>
+        <li>
+            <a href="#" 
+               class="contacts"
+               tal:attributes="href string:${view/portal_url}/Members">
+                Contacts
+                <small>Contacts</small>
+            </a>
+        </li>
+        <li>
+            <a href="#" 
+               class="alerts"
+               tal:attributes="href string:${view/portal_url}/News">
+                News
+                <small>News</small>
+            </a>
+        </li>
+        <li id="alertpanel"></li>
+        <li id="chatpanel">
+            <a href="#" class="chat">Users (<strong>18</strong>)</a>
+            <div class="subpanel">
+                <h3><span> &ndash; </span>Friends Online</h3>
+                <ul>
+                    <li><span>Family Members</span></li>
+                    <li><a href="#"><img src="chat-thumb.gif" alt="" /> Your Friend</a></li>
+                    <li><a href="#"><img src="chat-thumb.gif" alt="" /> Your Friend</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

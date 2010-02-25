@@ -1,0 +1,6 @@
+<layers>
+    <layer
+        name="bottom.feeder"
+        interface="bottom.feeder.browser.interfaces.IBottomFeederLayer"
+     />
+</layers>
