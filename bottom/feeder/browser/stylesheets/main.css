@@ -146,18 +146,6 @@ a.contacts {
     background: url(++resource++bottom.feeder.images/address_book_32.png) no-repeat center center; 
 }
 
-a.messages { 
-    background: url(++resource++bottom.feeder.images/email_32.png) no-repeat center center; 
-}
-
-a.playlist { 
-    background: url(++resource++bottom.feeder.images/page_table_32.png) no-repeat center center; 
-}
-
-a.videos { 
-    background: url(++resource++bottom.feeder.images/camera_32.png) no-repeat center center; 
-}
-
 a.alerts { 
     background: url(++resource++bottom.feeder.images/newspaper_32.png) no-repeat center center; 
 }
