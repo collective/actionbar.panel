@@ -1,0 +1,8 @@
+<li>
+    <a href="#" 
+        class="contacts"
+        tal:attributes="href string:${view/portal_url}/Members">
+        Contacts
+        <small>Contacts</small>
+    </a>
+</li>
