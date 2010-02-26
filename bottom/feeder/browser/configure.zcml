@@ -29,20 +29,57 @@
         />
 
     <browser:viewlet  
-        name="recent.activity"
-        manager=".interfaces.IBottomFeeder"
-        class=".viewlets.RecentActivityViewlet"
-        permission="zope2.View" 
-        layer=".interfaces.IBottomFeederLayer"
-        />
-
-    <browser:viewlet  
         for="*"
         name="bottom.feeder.viewlet"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
         class=".viewlets.BottomFeederViewlet"
         layer=".interfaces.IBottomFeederLayer"
         permission="zope2.View" 
+        />
+
+    <browser:viewlet  
+        name="bottomfeeder.home"
+        manager=".interfaces.IBottomFeeder"
+        class=".viewlets.HomeViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IBottomFeederLayer"
+        template="./templates/home_viewlet.pt"
+        />
+
+    <browser:viewlet  
+        name="bottomfeeder.user"
+        manager=".interfaces.IBottomFeeder"
+        class=".viewlets.UserViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IBottomFeederLayer"
+        template="./templates/user_viewlet.pt"
+        />
+
+    <browser:viewlet  
+        name="bottomfeeder.personalize"
+        manager=".interfaces.IBottomFeeder"
+        class=".viewlets.PersonalizeViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IBottomFeederLayer"
+        template="./templates/personalize_viewlet.pt"
+        />
+
+    <browser:viewlet  
+        name="bottomfeeder.members"
+        manager=".interfaces.IBottomFeeder"
+        class=".viewlets.MembersViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IBottomFeederLayer"
+        template="./templates/members_viewlet.pt"
+        />
+
+    <browser:viewlet  
+        name="bottomfeeder.news"
+        manager=".interfaces.IBottomFeeder"
+        class=".viewlets.NewsViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IBottomFeederLayer"
+        template="./templates/news_viewlet.pt"
         />
 
 </configure>
