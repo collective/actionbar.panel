@@ -1,7 +1,7 @@
 <li>
     <a href="#" 
         class="alerts"
-        tal:attributes="href string:${view/portal_url}/News">
+        tal:attributes="href string:${view/portal_url}/news">
         News
         <small>News</small>
     </a>
