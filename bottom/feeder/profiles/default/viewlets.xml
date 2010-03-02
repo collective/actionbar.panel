@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <object>
-    <order manager="plone.portalheader" skinname="*">
+    <order manager="bottom.feeder" skinname="*">
         <viewlet name="bottomfeeder.home" insert-before="*"/>
         <viewlet name="bottomfeeder.user" insert-after="bottomfeeder.home"/>
         <viewlet name="bottomfeeder.personalize" insert-after="bottomfeeder.user"/>
