@@ -1,8 +1,8 @@
 <li>
     <a href="#" 
         class="editprofile"
+        title="Edit my profile"
         tal:attributes="href string:${view/portal_url}/personalize_form">
         Edit Profile
-        <small>Edit Profile</small>
     </a>
 </li>

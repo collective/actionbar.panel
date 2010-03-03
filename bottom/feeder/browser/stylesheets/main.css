@@ -150,26 +150,6 @@ a.alerts {
     background: url(++resource++bottom.feeder.images/newspaper_32.png) no-repeat center center; 
 }
 
-#footpanel a small {
-    text-align: center;
-    width: 70px;
-    background: url(++resource++bottom.feeder.images/pop_arrow.gif) no-repeat center bottom;
-    padding: 5px 5px 11px;
-    display: none; /*--Hide by default--*/
-    color: #fff;
-    font-size: 0.8em;
-    text-indent: 0;
-}
-
-#footpanel a:hover small{
-    display: block; /*--Show on hover--*/
-    position: absolute;
-    top: -35px; /*--Position tooltip 35px above the list item--*/
-    left: 50%;
-    margin-left: -40px; /*--Center the tooltip--*/
-    z-index: 9999;
-}
-
 /*--Reset left positioning and make it right positioned--*/
 #alertpanel .subpanel { right: 0; left: auto; }
 
