@@ -27,22 +27,24 @@
 }
 
 #footpanel ul li{
-	padding: 0; margin: 0;
+	margin: 0px; 
+    padding: 0;
 	float: left;
 	position: relative;
 }
 
-#footpanel ul li a{
+#footpanel ul li a {
 	padding: 5px;
 	float: left;
-	text-indent: -9999px; /*--For text replacement - Shove text off of the page--*/
-	height: 32px; width: 32px;
-	text-decoration: none;
+	height: 32px; 
+    width: 32px;
 	color: #333;
 	position: relative;
 }
 
-html #footpanel ul li a:hover {background-color: #fff;}
+html #footpanel ul li a:hover {
+    background-color: #fff;
+}
 
 html #footpanel ul li a.active { /*--Active state when sub-panel is open--*/
     background-color: #fff;
@@ -151,27 +153,11 @@ a.alerts {
 }
 
 /*--Reset left positioning and make it right positioned--*/
-#alertpanel .subpanel { right: 0; left: auto; }
+#alertpanel .subpanel { 
+    right: 0; left: auto; 
+}
 
 #alertpanel .subpanel li {
 	border-top: 1px solid #f0f0f0;
 	display: block;
 }
-
-#alertpanel .subpanel li p {padding: 5px 10px;}
-#alertpanel .subpanel li a.delete{
-	background: url(delete_x.gif) no-repeat;
-	float: right;
-	width: 13px; height: 14px;
-	margin: 5px;
-	text-indent: -9999px;
-	visibility: hidden; 
-    /*--Hides by default but still takes up space (not completely gone like display:none;)--*/
-}
-
-#alertpanel .subpanel li a.delete:hover { background-position: left bottom; }
-#footpanel #alertpanel li.view {
-	text-align: right;
-	padding: 5px 10px 5px 0;
-}
-

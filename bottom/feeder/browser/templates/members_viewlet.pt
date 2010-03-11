@@ -3,6 +3,5 @@
         class="contacts"
         title="Contacts"
         tal:attributes="href string:${view/portal_url}/Members">
-        Contacts
     </a>
 </li>

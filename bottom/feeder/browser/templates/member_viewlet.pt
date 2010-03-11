@@ -3,6 +3,5 @@
        title="View Profile"
        class="profile"
        tal:attributes="href string:${view/portal_url}/author/${member/getId}">
-        View Profile
     </a>
 </li
