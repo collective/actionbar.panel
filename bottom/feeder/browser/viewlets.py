@@ -1,7 +1,6 @@
 from zope.interface import implements
 from zope.viewlet.interfaces import IViewlet
 
-
 from plone.app.viewletmanager.manager import OrderedViewletManager
 
 from Products.CMFCore.utils import getToolByName
