@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <object>
     <order manager="actionbar.panel" skinname="*">
-        <viewlet name="bottomfeeder.home" insert-before="*"/>
-        <viewlet name="bottomfeeder.user" insert-after="bottomfeeder.home"/>
-        <viewlet name="bottomfeeder.personalize" insert-after="bottomfeeder.user"/>
-        <viewlet name="bottomfeeder.members" insert-after="bottomfeeder.personalize"/>
-        <viewlet name="bottomfeeder.news" insert-after="bottomfeeder.members"/>
+        <viewlet name="actionbar.panel.home" insert-before="*"/>
+        <viewlet name="actionbar.panel.user" insert-after="bottomfeeder.home"/>
+        <viewlet name="actionbar.panel.personalize" insert-after="bottomfeeder.user"/>
+        <viewlet name="actionbar.panel.members" insert-after="bottomfeeder.personalize"/>
+        <viewlet name="actionbar.panel.news" insert-after="bottomfeeder.members"/>
     </order>
 </object>

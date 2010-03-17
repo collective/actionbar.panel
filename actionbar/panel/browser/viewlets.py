@@ -12,7 +12,7 @@ class BottomFeederViewlet(BrowserView):
         viewletmanager. It's sole purpose is to render the
         BottomFeederViewletManager.
     """
-    template = ViewPageTemplateFile('templates/bottomfeeder_viewlet.pt')
+    template = ViewPageTemplateFile('templates/actionbar.panel_viewlet.pt')
     
     def __init__(self, context, request, view, manager):
         super(BottomFeederViewlet, self).__init__(context, request)
@@ -30,7 +30,7 @@ class BottomFeederViewletManager(OrderedViewletManager):
     """ Any links or widgets that should appear in the actionbar.panel panel must
         be registered as viewlets for this viewletmanager.
     """
-    template = ViewPageTemplateFile('templates/bottomfeeder.pt')
+    template = ViewPageTemplateFile('templates/actionbar.panel.pt')
 
 
 class ViewletMixin:

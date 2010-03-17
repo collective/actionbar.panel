@@ -51,7 +51,7 @@ class TestCase(ptc.PloneTestCase):
 class TestViewlets(TestCase):
     """ """
 
-    def test_bottomfeederviewlet(self):
+    def test_actionbar.panelviewlet(self):
         """ """
         request = self.app.REQUEST
         context = self.portal
