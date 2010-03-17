@@ -16,8 +16,5 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <cmf:registerDirectory name="actionbar.panel_custom_images"/>
-  <cmf:registerDirectory name="actionbar.panel_custom_templates"/>
-  <cmf:registerDirectory name="actionbar.panel_styles"/>
 
 </configure>
