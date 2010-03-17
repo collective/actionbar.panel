@@ -1,7 +1,0 @@
-<li tal:define="member view/member">
-    <a href="#" 
-        class="profile"
-        title="View my profile"
-        tal:attributes="href string:${view/portal_url}/author/${member/getId}">
-    </a>
-</li>
