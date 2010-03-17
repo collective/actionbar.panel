@@ -129,7 +129,7 @@ html #footpanel ul li a.active { /*--Active state when sub-panel is open--*/
 }
 
 #footpanel a.home{
-	background: url(++resource++bottom.feeder.images/home_32.png) no-repeat 15px center;
+	background: url(++resource++actionbar.panel.images/home_32.png) no-repeat 15px center;
 	width: 52px;
 	border-right: 1px solid #bbb;
 	text-indent: 0; !important;
@@ -137,19 +137,19 @@ html #footpanel ul li a.active { /*--Active state when sub-panel is open--*/
 }
 
 a.profile { 
-    background: url(++resource++bottom.feeder.images/user_32.png) no-repeat center center;  
+    background: url(++resource++actionbar.panel.images/user_32.png) no-repeat center center;  
 }
 
 a.editprofile { 
-    background: url(++resource++bottom.feeder.images/tools_32.png) no-repeat center center; 
+    background: url(++resource++actionbar.panel.images/tools_32.png) no-repeat center center; 
 }
 
 a.contacts { 
-    background: url(++resource++bottom.feeder.images/address_book_32.png) no-repeat center center; 
+    background: url(++resource++actionbar.panel.images/address_book_32.png) no-repeat center center; 
 }
 
 a.alerts { 
-    background: url(++resource++bottom.feeder.images/newspaper_32.png) no-repeat center center; 
+    background: url(++resource++actionbar.panel.images/newspaper_32.png) no-repeat center center; 
 }
 
 /*--Reset left positioning and make it right positioned--*/

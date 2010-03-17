@@ -11,33 +11,33 @@ from Products.PloneTestCase import layer
 
 from plone import browserlayer
 
-from bottom.feeder.browser.viewlets import BottomFeederViewlet
-from bottom.feeder.browser.viewlets import HomeViewlet
-from bottom.feeder.browser.viewlets import UserViewlet
-from bottom.feeder.browser.viewlets import PersonalizeViewlet
-from bottom.feeder.browser.viewlets import MembersViewlet
-from bottom.feeder.browser.viewlets import NewsViewlet
-from bottom.feeder.browser.interfaces import IBottomFeederLayer
+from actionbar.panel.browser.viewlets import BottomFeederViewlet
+from actionbar.panel.browser.viewlets import HomeViewlet
+from actionbar.panel.browser.viewlets import UserViewlet
+from actionbar.panel.browser.viewlets import PersonalizeViewlet
+from actionbar.panel.browser.viewlets import MembersViewlet
+from actionbar.panel.browser.viewlets import NewsViewlet
+from actionbar.panel.browser.interfaces import IBottomFeederLayer
 
-import bottom.feeder
-ztc.installProduct('bottom.feeder')
-ztc.installPackage(bottom.feeder)
+import actionbar.panel
+ztc.installProduct('actionbar.panel')
+ztc.installPackage(actionbar.panel)
 SiteLayer = layer.PloneSite
 
 class BottomFeederLayer(SiteLayer):
 
     @classmethod
     def setUp(cls):
-        PRODUCTS = ['bottom.feeder', ]
+        PRODUCTS = ['actionbar.panel', ]
         ptc.setupPloneSite(products=PRODUCTS)
 
         fiveconfigure.debug_mode = True
-        zcml.load_config('configure.zcml', bottom.feeder)
+        zcml.load_config('configure.zcml', actionbar.panel)
         fiveconfigure.debug_mode = False
 
         browserlayer.utils.register_layer(
                                 IBottomFeederLayer, 
-                                name='bottom.feeder')
+                                name='actionbar.panel')
 
         component.provideAdapter(instanceSchemaFactory)
         SiteLayer.setUp()

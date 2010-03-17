@@ -5,23 +5,23 @@
         cookie_persistence="False"
         request_varname="plone_skin">
 
- <object name="bottom_feeder_custom_images"
+ <object name="actionbar.panel_custom_images"
     meta_type="Filesystem Directory View"
-    directory="bottom.feeder:skins/bottom_feeder_custom_images"/>
- <object name="bottom_feeder_custom_templates"
+    directory="actionbar.panel:skins/bottom_feeder_custom_images"/>
+ <object name="actionbar.panel_custom_templates"
     meta_type="Filesystem Directory View"
-    directory="bottom.feeder:skins/bottom_feeder_custom_templates"/>
- <object name="bottom_feeder_styles"
+    directory="actionbar.panel:skins/bottom_feeder_custom_templates"/>
+ <object name="actionbar.panel_styles"
     meta_type="Filesystem Directory View"
-    directory="bottom.feeder:skins/bottom_feeder_styles"/>
+    directory="actionbar.panel:skins/bottom_feeder_styles"/>
 
  <skin-path name="Plone Default">
-  <layer name="bottom_feeder_custom_images"
+  <layer name="actionbar.panel_custom_images"
      insert-after="custom"/>
-  <layer name="bottom_feeder_custom_templates"
-     insert-after="bottom_feeder_custom_images"/>
-  <layer name="bottom_feeder_styles"
-     insert-after="bottom_feeder_custom_templates"/>
+  <layer name="actionbar.panel_custom_templates"
+     insert-after="actionbar.panel_custom_images"/>
+  <layer name="actionbar.panel_styles"
+     insert-after="actionbar.panel_custom_templates"/>
  </skin-path>
 
 </object>

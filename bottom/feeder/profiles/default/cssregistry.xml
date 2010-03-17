@@ -2,7 +2,7 @@
 <object name="portal_css">
 
  <stylesheet title=""
-    id="++resource++bottom.feeder.stylesheets/main.css"
+    id="++resource++actionbar.panel.stylesheets/main.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>

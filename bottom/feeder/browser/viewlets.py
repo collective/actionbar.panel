@@ -27,7 +27,7 @@ class BottomFeederViewlet(BrowserView):
 
 
 class BottomFeederViewletManager(OrderedViewletManager):
-    """ Any links or widgets that should appear in the bottom.feeder panel must
+    """ Any links or widgets that should appear in the actionbar.panel panel must
         be registered as viewlets for this viewletmanager.
     """
     template = ViewPageTemplateFile('templates/bottomfeeder.pt')

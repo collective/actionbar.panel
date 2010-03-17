@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='bottom.feeder',
+setup(name='actionbar.panel',
       version=version,
       description="Provides a feeder panel at the bottom of your Plone site",
       long_description=open("README.txt").read() + "\n" +

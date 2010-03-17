@@ -1,22 +1,22 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    i18n_domain="bottom.feeder">
+    i18n_domain="actionbar.panel">
 
     <browser:resourceDirectory
-        name="bottom.feeder.images"
+        name="actionbar.panel.images"
         directory="images"
         layer=".interfaces.IBottomFeederLayer"
         />
 
     <browser:resourceDirectory
-        name="bottom.feeder.stylesheets"
+        name="actionbar.panel.stylesheets"
         directory="stylesheets"
         layer=".interfaces.IBottomFeederLayer"
         />
 
     <browser:viewletManager
-        name="bottom.feeder"
+        name="actionbar.panel"
         provides=".interfaces.IBottomFeeder"
         permission="zope2.View"
         class=".viewlets.BottomFeederViewletManager"
@@ -25,7 +25,7 @@
 
     <browser:viewlet  
         for="*"
-        name="bottom.feeder.viewlet"
+        name="actionbar.panel.viewlet"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
         class=".viewlets.BottomFeederViewlet"
         layer=".interfaces.IBottomFeederLayer"
