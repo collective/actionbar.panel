@@ -1,1 +1,1 @@
-<div tal:replace="structure provider:bottom.feeder" />
+<div tal:replace="structure provider:actionbar.panel" />
