@@ -6,74 +6,74 @@
     <browser:resourceDirectory
         name="actionbar.panel.images"
         directory="images"
-        layer=".interfaces.IBottomFeederLayer"
+        layer=".interfaces.IActionbarPanelLayer"
         />
 
     <browser:resourceDirectory
         name="actionbar.panel.stylesheets"
         directory="stylesheets"
-        layer=".interfaces.IBottomFeederLayer"
+        layer=".interfaces.IActionbarPanelLayer"
         />
 
     <browser:viewletManager
         name="actionbar.panel"
-        provides=".interfaces.IBottomFeeder"
+        provides=".interfaces.IActionbarPanel"
         permission="zope2.View"
-        class=".viewlets.BottomFeederViewletManager"
-        layer=".interfaces.IBottomFeederLayer"
+        class=".viewlets.ActionbarPanelViewletManager"
+        layer=".interfaces.IActionbarPanelLayer"
         />
 
     <browser:viewlet  
         for="*"
         name="actionbar.panel.viewlet"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-        class=".viewlets.BottomFeederViewlet"
-        layer=".interfaces.IBottomFeederLayer"
+        class=".viewlets.ActionbarPanelViewlet"
+        layer=".interfaces.IActionbarPanelLayer"
         permission="zope2.View" 
         />
 
     <browser:viewlet  
         name="actionbar.panel.home"
-        manager=".interfaces.IBottomFeeder"
+        manager=".interfaces.IActionbarPanel"
         class=".viewlets.HomeViewlet"
         permission="zope2.View" 
-        layer=".interfaces.IBottomFeederLayer"
+        layer=".interfaces.IActionbarPanelLayer"
         template="./templates/home_viewlet.pt"
         />
 
     <browser:viewlet  
         name="actionbar.panel.user"
-        manager=".interfaces.IBottomFeeder"
+        manager=".interfaces.IActionbarPanel"
         class=".viewlets.UserViewlet"
         permission="zope2.View" 
-        layer=".interfaces.IBottomFeederLayer"
+        layer=".interfaces.IActionbarPanelLayer"
         template="./templates/user_viewlet.pt"
         />
 
     <browser:viewlet  
         name="actionbar.panel.personalize"
-        manager=".interfaces.IBottomFeeder"
+        manager=".interfaces.IActionbarPanel"
         class=".viewlets.PersonalizeViewlet"
         permission="zope2.View" 
-        layer=".interfaces.IBottomFeederLayer"
+        layer=".interfaces.IActionbarPanelLayer"
         template="./templates/personalize_viewlet.pt"
         />
 
     <browser:viewlet  
         name="actionbar.panel.members"
-        manager=".interfaces.IBottomFeeder"
+        manager=".interfaces.IActionbarPanel"
         class=".viewlets.MembersViewlet"
         permission="zope2.View" 
-        layer=".interfaces.IBottomFeederLayer"
+        layer=".interfaces.IActionbarPanelLayer"
         template="./templates/members_viewlet.pt"
         />
 
     <browser:viewlet  
         name="actionbar.panel.news"
-        manager=".interfaces.IBottomFeeder"
+        manager=".interfaces.IActionbarPanel"
         class=".viewlets.NewsViewlet"
         permission="zope2.View" 
-        layer=".interfaces.IBottomFeederLayer"
+        layer=".interfaces.IActionbarPanelLayer"
         template="./templates/news_viewlet.pt"
         />
 

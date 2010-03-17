@@ -7,15 +7,15 @@ from Products.CMFCore.utils import getToolByName
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
-class BottomFeederViewlet(BrowserView):
+class ActionbarPanelViewlet(BrowserView):
     """ This viewlet is registered for and rendered inside the IPortalFooter
         viewletmanager. It's sole purpose is to render the
-        BottomFeederViewletManager.
+        ActionbarPanelViewletManager.
     """
-    template = ViewPageTemplateFile('templates/actionbar.panel_viewlet.pt')
+    template = ViewPageTemplateFile('templates/actionbar_viewlet.pt')
     
     def __init__(self, context, request, view, manager):
-        super(BottomFeederViewlet, self).__init__(context, request)
+        super(ActionbarPanelViewlet, self).__init__(context, request)
         self.__parent__ = view
         self.context = context
         self.request = request
@@ -26,11 +26,11 @@ class BottomFeederViewlet(BrowserView):
         return self.template()
 
 
-class BottomFeederViewletManager(OrderedViewletManager):
+class ActionbarPanelViewletManager(OrderedViewletManager):
     """ Any links or widgets that should appear in the actionbar.panel panel must
         be registered as viewlets for this viewletmanager.
     """
-    template = ViewPageTemplateFile('templates/actionbar.panel.pt')
+    template = ViewPageTemplateFile('templates/actionbar.pt')
 
 
 class ViewletMixin:

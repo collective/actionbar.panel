@@ -12,7 +12,7 @@
       name="default"
       title="actionbar.panel"
       directory="profiles/default"
-      description='Extension profile for BottomFeeder.'
+      description='Extension profile for ActionbarPanel.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

@@ -11,20 +11,20 @@ from Products.PloneTestCase import layer
 
 from plone import browserlayer
 
-from actionbar.panel.browser.viewlets import BottomFeederViewlet
+from actionbar.panel.browser.viewlets import ActionbarPanelViewlet
 from actionbar.panel.browser.viewlets import HomeViewlet
 from actionbar.panel.browser.viewlets import UserViewlet
 from actionbar.panel.browser.viewlets import PersonalizeViewlet
 from actionbar.panel.browser.viewlets import MembersViewlet
 from actionbar.panel.browser.viewlets import NewsViewlet
-from actionbar.panel.browser.interfaces import IBottomFeederLayer
+from actionbar.panel.browser.interfaces import IActionbarPanelLayer
 
 import actionbar.panel
 ztc.installProduct('actionbar.panel')
 ztc.installPackage(actionbar.panel)
 SiteLayer = layer.PloneSite
 
-class BottomFeederLayer(SiteLayer):
+class ActionbarPanelLayer(SiteLayer):
 
     @classmethod
     def setUp(cls):
@@ -36,7 +36,7 @@ class BottomFeederLayer(SiteLayer):
         fiveconfigure.debug_mode = False
 
         browserlayer.utils.register_layer(
-                                IBottomFeederLayer, 
+                                IActionbarPanelLayer, 
                                 name='actionbar.panel')
 
         component.provideAdapter(instanceSchemaFactory)
@@ -45,7 +45,7 @@ class BottomFeederLayer(SiteLayer):
 class TestCase(ptc.PloneTestCase):
     """Base class used for test cases
     """
-    layer = BottomFeederLayer
+    layer = ActionbarPanelLayer
 
 
 class TestViewlets(TestCase):
@@ -55,9 +55,9 @@ class TestViewlets(TestCase):
         """ """
         request = self.app.REQUEST
         context = self.portal
-        viewlet = BottomFeederViewlet(context, request, None, None)
+        viewlet = ActionbarPanelViewlet(context, request, None, None)
         # XXX: This throws a componentProviderLookupError, so for some reason
-        # the BottomFeederViewletManager is not being registered for the tests.
+        # the ActionbarPanelViewletManager is not being registered for the tests.
         # I, however, have no idea why :(
         # self.assertEqual(type(viewlet.render(), str))
 
