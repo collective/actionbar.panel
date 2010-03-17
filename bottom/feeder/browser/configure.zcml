@@ -3,11 +3,6 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="bottom.feeder">
 
-    <browser:resource
-        name="bottomfeeder.js"
-        file="javascript/bottomfeeder.js"
-        />
-
     <browser:resourceDirectory
         name="bottom.feeder.images"
         directory="images"
