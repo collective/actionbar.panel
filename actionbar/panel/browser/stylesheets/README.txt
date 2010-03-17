@@ -8,7 +8,7 @@ Its declaration is located in 'browser/configure.zcml':
 
     <!-- Resource directory for stylesheets -->
     <browser:resourceDirectory
-        name="bottom.feeder.stylesheets"
+        name="actionbar.panel.stylesheets"
         directory="stylesheets"
         layer=".interfaces.IThemeSpecific"
         />
@@ -16,7 +16,7 @@ Its declaration is located in 'browser/configure.zcml':
 A stylesheet placed in this directory (e.g. 'main.css') can be accessed from
 this relative URL:
 
-    "++resource++bottom.feeder.stylesheets/main.css"
+    "++resource++actionbar.panel.stylesheets/main.css"
 
 Note that it might be better to register each of these resources separately if
 you want them to be overridable from zcml directives.
