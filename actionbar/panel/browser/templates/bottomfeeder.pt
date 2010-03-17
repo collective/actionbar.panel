@@ -1,0 +1,7 @@
+<div id="footpanel">
+    <ul id="mainpanel">
+        <tal:viewlets repeat="viewlet options/viewlets">
+            <tal:render replace="structure viewlet/render"/>
+        </tal:viewlets>
+    </ul>
+</div>
