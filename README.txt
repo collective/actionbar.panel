@@ -7,7 +7,6 @@ site, similar to the one used on the now old facebook style.
 I took a lot of the css from Soh Tanaka's excellent tutorial:
 * http://www.sohtanaka.com/web-design/facebook-style-footer-admin-panel-part-1/
 
-
 Adding new actions:
 -------------------
 
@@ -19,7 +18,6 @@ See actionbar/panel/browser/configure.zcml for widget registrations.
 
 If you want to publish eggs with add-on actions for the actionbar, please consider
 releasing them under the actionbar.* namespace.
-
 
 Installing:
 -----------
