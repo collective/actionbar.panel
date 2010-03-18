@@ -35,7 +35,7 @@
     <browser:viewlet  
         name="actionbar.panel.home"
         manager=".interfaces.IActionbarPanel"
-        class=".viewlets.HomeViewlet"
+        class=".viewlets.ActionViewlet"
         permission="zope2.View" 
         layer=".interfaces.IActionbarPanelLayer"
         template="./templates/home_viewlet.pt"
@@ -44,7 +44,7 @@
     <browser:viewlet  
         name="actionbar.panel.user"
         manager=".interfaces.IActionbarPanel"
-        class=".viewlets.UserViewlet"
+        class=".viewlets.ActionViewlet"
         permission="zope2.View" 
         layer=".interfaces.IActionbarPanelLayer"
         template="./templates/user_viewlet.pt"
@@ -53,7 +53,7 @@
     <browser:viewlet  
         name="actionbar.panel.personalize"
         manager=".interfaces.IActionbarPanel"
-        class=".viewlets.PersonalizeViewlet"
+        class=".viewlets.ActionViewlet"
         permission="zope2.View" 
         layer=".interfaces.IActionbarPanelLayer"
         template="./templates/personalize_viewlet.pt"
@@ -62,7 +62,7 @@
     <browser:viewlet  
         name="actionbar.panel.members"
         manager=".interfaces.IActionbarPanel"
-        class=".viewlets.MembersViewlet"
+        class=".viewlets.ActionViewlet"
         permission="zope2.View" 
         layer=".interfaces.IActionbarPanelLayer"
         template="./templates/members_viewlet.pt"
@@ -71,7 +71,7 @@
     <browser:viewlet  
         name="actionbar.panel.news"
         manager=".interfaces.IActionbarPanel"
-        class=".viewlets.NewsViewlet"
+        class=".viewlets.ActionViewlet"
         permission="zope2.View" 
         layer=".interfaces.IActionbarPanelLayer"
         template="./templates/news_viewlet.pt"

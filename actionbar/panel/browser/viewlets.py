@@ -1,30 +1,16 @@
-from zope.interface import implements
-from zope.viewlet.interfaces import IViewlet
-
 from plone.app.viewletmanager.manager import OrderedViewletManager
+from plone.app.layout.viewlets.common import ViewletBase
 
 from Products.CMFCore.utils import getToolByName
-from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
-class ActionbarPanelViewlet(BrowserView):
+class ActionbarPanelViewlet(ViewletBase):
     """ This viewlet is registered for and rendered inside the IPortalFooter
         viewletmanager. It's sole purpose is to render the
         ActionbarPanelViewletManager.
     """
-    template = ViewPageTemplateFile('templates/actionbar_viewlet.pt')
+    index = ViewPageTemplateFile('templates/actionbar_viewlet.pt')
     
-    def __init__(self, context, request, view, manager):
-        super(ActionbarPanelViewlet, self).__init__(context, request)
-        self.__parent__ = view
-        self.context = context
-        self.request = request
-        self.view = view
-        self.manager = manager
-
-    def render(self):
-        return self.template()
-
 
 class ActionbarPanelViewletManager(OrderedViewletManager):
     """ Any links or widgets that should appear in the actionbar.panel panel must
@@ -45,84 +31,6 @@ class ViewletMixin:
         return portal_url()
 
 
-
-class HomeViewlet(BrowserView, ViewletMixin):
+class ActionViewlet(ViewletBase, ViewletMixin):
     """ """
-    implements(IViewlet)
-
-    def __init__(self, context, request, view, manager):
-        super(HomeViewlet, self).__init__(context, request)
-        self.__parent__ = view
-        self.context = context
-        self.request = request
-        self.view = view
-        self.manager = manager
-
-    def update(self):
-        pass
-
-
-class UserViewlet(BrowserView, ViewletMixin):
-    """ """
-    implements(IViewlet)
-
-    def __init__(self, context, request, view, manager):
-        super(UserViewlet, self).__init__(context, request)
-        self.__parent__ = view
-        self.context = context
-        self.request = request
-        self.view = view
-        self.manager = manager
-
-    def update(self):
-        pass
-
-
-class PersonalizeViewlet(BrowserView, ViewletMixin):
-    """ """
-    implements(IViewlet)
-
-    def __init__(self, context, request, view, manager):
-        super(PersonalizeViewlet, self).__init__(context, request)
-        self.__parent__ = view
-        self.context = context
-        self.request = request
-        self.view = view
-        self.manager = manager
-
-    def update(self):
-        pass
-
-
-class MembersViewlet(BrowserView, ViewletMixin):
-    """ """
-    implements(IViewlet)
-
-    def __init__(self, context, request, view, manager):
-        super(MembersViewlet, self).__init__(context, request)
-        self.__parent__ = view
-        self.context = context
-        self.request = request
-        self.view = view
-        self.manager = manager
-
-    def update(self):
-        pass
-
-
-class NewsViewlet(BrowserView, ViewletMixin):
-    """ """
-    implements(IViewlet)
-
-    def __init__(self, context, request, view, manager):
-        super(NewsViewlet, self).__init__(context, request)
-        self.__parent__ = view
-        self.context = context
-        self.request = request
-        self.view = view
-        self.manager = manager
-
-    def update(self):
-        pass
-
 
