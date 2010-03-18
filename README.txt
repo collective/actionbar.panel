@@ -38,9 +38,17 @@ entire panel itself. To do this, go to the viewlet managent screen by appending
 '/@@manage-viewlets' to the root URL of your Plone site. The panel
 viewlet manager and its actions will be near the bottom of the page.
 
+Compatibility:
+--------------
+
+actionbar.panel has been tested on Plone 4 and Plone 3.3.5.
+It should work on older versions of Plone 3 as well. 
+
 Contact:
 --------
 
-Please contact me if you have any questions or improvement suggestions.
+Please contact me if you have any questions, compatibility problems or improvement suggestions.
+
+- brand at syslab dot com
 
 
