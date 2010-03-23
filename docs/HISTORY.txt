@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0 (2010-03-23)
+----------------
+
+- Fixed the package name in the INSTALL.txt and LICENSE.txt files [jcbrand]
+
 1.0 (2010-03-18)
 ----------------
 
