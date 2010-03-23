@@ -32,4 +32,4 @@ setup(name='actionbar.panel',
       """,
       setup_requires=["PasteScript"],
       paster_plugins=["ZopeSkel"],
-      
+      )
