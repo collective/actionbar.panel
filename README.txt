@@ -44,6 +44,14 @@ Compatibility:
 actionbar.panel has been tested on Plone 4 and Plone 3.3.5.
 It should work on older versions of Plone 3 as well. 
 
+Icons:
+------
+
+The icons used in this release were created by Liam McKay
+(http://wefunction.com/) and are released under the GPL.
+
+http://www.woothemes.com/2009/09/woofunction-178-amazing-web-design-icons/
+
 Contact:
 --------
 
