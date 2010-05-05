@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2 (Unreleased)
+1.2 (2010-05-05)
 ----------------
 
 - Fixed the 'User Profile' widget to point to the login_form when view
