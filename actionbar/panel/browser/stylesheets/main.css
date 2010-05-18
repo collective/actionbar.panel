@@ -161,3 +161,8 @@ a.alerts {
 	border-top: 1px solid #f0f0f0;
 	display: block;
 }
+
+/* Needed, because else the overlay would be hidden below the panel */
+div.overlay-ajax {
+    padding-bottom: 44px;
+}
