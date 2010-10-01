@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.1 (unreleased)
+1.2.1 (2010-10-01)
 ------------------
 
 - Adding some padding so that the overlay won't hide lower borders
