@@ -4,7 +4,8 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adding some padding so that the overlay won't hide lower borders
+  of overlays [do3cc]
 
 
 1.2 (2010-05-05)
